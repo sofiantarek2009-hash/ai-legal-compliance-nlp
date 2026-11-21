@@ -1,26 +1,31 @@
-# AI and Compliance Systems
+# AI and Compliance Systems (Public Showcase)
 
-**Category:** AI & Compliance Systems · **Status:** Production Client Deployments
-
-> **Visibility & Public Gists:** This repository is **private** due to client confidentiality and proprietary domain pipelines. **Public GitHub Gists** containing sanitized architecture notes and technical walkthroughs are available for portfolio and diligence review.
+> **Public Runnable Proof Gist:** [**Execute & Inspect Live Proof Gist ->**](https://gist.github.com/sofiantarek2009-hash/66bcce759395d549fa402d0ee4411cd8)  
+> **Visibility Policy:** Client production weights, contracts, and raw medical/financial datasets stay **private** under NDA. The linked public Gist publishes zero-dependency reproducible Python modules for each capability below.
 
 ---
 
-## Overview
+## Run the Reproducible Proof Locally (Zero Dependencies)
 
-End-to-end applied AI systems shipped directly for commercial clients across regulated document workflows, biotechnology, and financial forecasting.
+Requires **Python 3.9+ standard library only**:
 
-## Delivered Systems & Impact
+```bash
+gh gist clone 66bcce759395d549fa402d0ee4411cd8 legal-compliance-nlp-proof
+cd legal-compliance-nlp-proof
+python3 legal_compliance_nlp_pipeline.py --test
+```
 
-### 1. AI Legal & Compliance NLP Pipelines
-- **Automated Clause Classification:** Structured ingestion and semantic classification of commercial legal agreements and compliance documents.
-- **Automated Risk Flagging:** Deterministic/NLP extraction highlighting non-standard clauses, policy deviations, and review bottlenecks prior to human sign-off.
-- **Measured Impact:** Deployed in production for business clients, **cutting manual review time by ~50% at human-level accuracy**.
+## Verified Public Proof Suite + Private Client Impact
+
+### 1. AI Legal & Compliance NLP Pipeline
+- **Implementation in Public Gist:** Sublinear TF-IDF (word unigrams/bigrams + character 5-grams) trained with L2-regularized Multinomial Softmax SGD + deterministic statutory red-flag character-span extractor.
+- **Verified Gist Benchmark:** **`87.50%` Accuracy** and **`0.8615` Macro-F1** across strict Stratified 5-Fold CV (`72` sanitized synthetic MSA/DPA clauses, `6` risk classes, `0` train/test fold overlap) + **`3/3` exact statutory red-flag character spans matched**.
+- **Production Client Impact (Private Repo):** Deployed for business clients, **cutting manual review time by ~50% at human-level accuracy**.
 
 ### 2. Custom Client AI Models (Biotech & Financial Forecasting)
-- **Biotech — Genetic Risk Pattern Identification:** Custom machine learning pipelines designed for identifying genetic risk patterns from biological feature datasets.
-- **Financial Forecasting:** Predictive time-series and tabular models tailored for client financial forecasting workflows.
+- **Biotech — Genetic Risk Pattern QC & PRS (Public Gist):** Exact Pearson `chi^2` Hardy-Weinberg Equilibrium gate cleanly rejects corrupted callset `rs999_CORRUPTED` (`(90, 2, 8)`, `p < 1e-4`) while scoring passing alleles into calibrated Bayesian posterior log-odds risk (**`26.89%`**).
+- **Financial Forecasting — Walk-Forward Holt-Winters (Public Gist):** Damped double exponential smoothing over `8`-period holdout achieves **`RMSE = 1.21` (`MAPE = 0.47%`)** vs. seasonal naive baseline **`RMSE = 23.55` (`MAPE = 10.10%`)**.
 
 ---
 
-**Author:** Sofian Mousa
+**Author:** Sofian Mousa · **Contact:** `sofianmousa@apodictic.dev`
