@@ -26,6 +26,14 @@ python3 legal_compliance_nlp_pipeline.py --test
 - **Biotech — Genetic Risk Pattern QC & PRS (Public Gist):** Exact Pearson `chi^2` Hardy-Weinberg Equilibrium gate cleanly rejects corrupted callset `rs999_CORRUPTED` (`(90, 2, 8)`, `p < 1e-4`) while scoring passing alleles into calibrated Bayesian posterior log-odds risk (**`26.89%`**).
 - **Financial Forecasting — Walk-Forward Holt-Winters (Public Gist):** Damped double exponential smoothing over `8`-period holdout achieves **`RMSE = 1.21` (`MAPE = 0.47%`)** vs. seasonal naive baseline **`RMSE = 23.55` (`MAPE = 10.10%`)**.
 
+## Proof Bundles & Related Systems
+
+- **Alpha Genesis (EGX Trading Engine):** [Showcase Repo](https://github.com/sofiantarek2009-hash/alpha-genesis-overview) · [Runnable Proof Gist](https://gist.github.com/sofiantarek2009-hash/a342d001d6ee81478a3e33519afaed29)
+- **Polymarket Statistical Models:** [Showcase Repo](https://github.com/sofiantarek2009-hash/polymarket-prediction-models) · [Runnable Proof Gist](https://gist.github.com/sofiantarek2009-hash/9b62a1b39b175a7574452c393e16f71f)
+- **AI Legal NLP, Biotech & Forecasting:** [Showcase Repo](https://github.com/sofiantarek2009-hash/ai-legal-compliance-nlp) · [Runnable Proof Gist](https://gist.github.com/sofiantarek2009-hash/66bcce759395d549fa402d0ee4411cd8)
+- **Autonomous Fixed-Wing UAV (SIL):** [Showcase Repo](https://github.com/sofiantarek2009-hash/autonomous-fixed-wing-uav) · [Runnable Proof Gist](https://gist.github.com/sofiantarek2009-hash/5a2fe80e4b6eb7809202c54b7a337255)
+- **Apodictic Public Verification Harness (10 Proof Bundles + CI):** [apodictic-verified-proofs](https://github.com/sofiantarek2009-hash/apodictic-verified-proofs)
+- **Live Explorer & AI Agent Specs:** [www.apodictic.dev/proofs](https://www.apodictic.dev/proofs) · [`llms.txt`](https://www.apodictic.dev/llms.txt) · [`.well-known/agent.json`](https://www.apodictic.dev/.well-known/agent.json) · [GitHub Profile](https://github.com/sofiantarek2009-hash)
 ---
 
 **Author:** Sofian Mousa · **Contact:** `sofianmousa@apodictic.dev`
